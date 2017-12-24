@@ -3,7 +3,7 @@ import {Component} from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 import {TodoPage} from './TodoPage';
-import Note from './Note'
+//import Note from './Note'
 import {Navbar} from './Navbar'
 import * as todoUtils from './todoUtils';
 
@@ -143,9 +143,9 @@ handleEditChange = (ev) => {
             </div>
             
             <div className="notecontainer">
-                <Note _id={this.state.todo_id} 
                 
-                />
+                
+            
             </div>
         </div>
 
