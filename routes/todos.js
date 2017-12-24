@@ -31,6 +31,16 @@ router.post('/', function(req, res, next){
     })
 })
 
+router.put('/:id', (req, res, next) => {
+    const todoId = req.params.id;
+    Todo.findByIdAndUpdate(todoId, req.body, function(err, todo){
+        if (err){
+            return next(err);
+        }
+        res.send(200);
+    })
+})
+
 //get id by params
 router.get('/:id', function(req, res, next){
     Todo.findById(req.params.id, req.body, function(err, todo){

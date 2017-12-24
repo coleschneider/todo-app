@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var TodoSchema = new mongoose.Schema({
     id: String,
     name: String,
+    note: String,
     isComplete: {type: Boolean, default: false}
 }, {timestamps: true})
 
