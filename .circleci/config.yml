@@ -3,6 +3,11 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: mern-todo-reactapp
 jobs:
   build:
     docker:
